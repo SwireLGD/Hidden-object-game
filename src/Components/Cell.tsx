@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
-interface CellProps {
+type CellProps = {
   index: number;
   hiddenObjectIndex: number;
   onCellClick: () => void;
-}
+};
 
 const Cell: React.FC<CellProps> = ({ index, hiddenObjectIndex, onCellClick }) => {
   const [revealed, setRevealed] = useState(false);
